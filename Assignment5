@@ -1,0 +1,48 @@
+# Created by: Francisco Lee
+# Created on: December 21st
+# Created for: ICS3U
+# This program is for assignment 5
+
+import ui
+
+from numpy import random
+
+computer_random_number = random.radiant(1 , 10)
+# generate tandom number for the computer between 1 to 10
+
+print computer_random_number
+
+def deal_the_numbers_touch_up_inside(sender):
+	# deal the numbers to user
+	
+	from numpy import random
+	# genetate random number for user and the computer.
+	
+	user_random_number = random.radiant(1, 10)
+	
+	print user_random_number
+	# show what user got 
+	
+	def deal_additional_number_touch_up_inside(sender):
+		# deal additional cards if user prefer.
+		
+		from numpy import random
+		# generates additional raandom number.
+		
+		user_random_number = random.randint(1, 10)
+		
+		print user_random_number
+		
+		if user_random_number < computer_random_number
+		
+		print('you lose')
+		
+		if user_random_number > computer_random_number
+		
+		print('you won')
+		
+		
+		
+
+v = ui.load_view()
+v.present('full_screen')
